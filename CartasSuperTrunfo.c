@@ -4,7 +4,7 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-// Adeildo Belisario - Desafio Novato
+// Adeildo Belisario - Desafio Novato/Desafio Aventureiro
 
 int main() {
     //Banco de variáveis
@@ -15,6 +15,7 @@ int main() {
     float Area1, Area2;
     float Pib1, Pib2;
     int NumPontosTuristicos1, NumPontosTuristicos2;
+
 
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     // Dando informações iniciais
@@ -74,6 +75,13 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Fazendo as contas
+
+    float DensPop1 =  Populacao1 / Area1;
+    float PibPerCap1 = (Pib1 * 1e9) / Populacao1;
+    float DensPop2 = Populacao2 / Area2;
+    float PibPerCap2 = (Pib2 * 1e9) / Populacao2;
+
     // Mostrando os dados cadastrados da primeira carta
 
     printf("\nCarta 1 \n");
@@ -84,6 +92,9 @@ int main() {
     printf("Área: %.2f km²\n", Area1);
     printf("PIB: R$ %.2f Bilhões de reais\n", Pib1);
     printf("Pontos turísticos: %d\n", NumPontosTuristicos1);
+    printf("Densidade populacional: %.2f hab/km²\n", DensPop1);
+    printf("PIB per Capita: %.2f de reais\n", PibPerCap1);
+
 
     // Mostrando os dados cadastrados da segunda carta
 
@@ -95,6 +106,8 @@ int main() {
     printf("Área: %.2f km²\n", Area2);
     printf("PIB: R$ %.2f Bilhões de reais\n", Pib2);
     printf("Pontos turísticos: %d\n", NumPontosTuristicos2);
-    
+    printf("Densidade populacional: %.2f hab/km²\n", DensPop2);
+    printf("PIB per Capita: %.2f de reais\n", PibPerCap2);
+
     return 0;
 }
